@@ -14,14 +14,14 @@ int main(int argc, char **argv)
     IncomingPayment incomingPayment{11};
     OutgoingPayment outgoingPayment{10};
 
-    incomingPayment.apply(account);
+    incomingPayment.apply(&account);
 
-    outgoingPayment.apply(account);
+    outgoingPayment.apply(&account);
 
-    client.use(account);
-    client.use(account);
-    client.use(account);
-    client.use(account);
+    client.use(&account);
+    client.use(&account);
+    client.use(&account);
+    client.use(&account);
 
     return 0;
 }

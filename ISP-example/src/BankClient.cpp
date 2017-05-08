@@ -2,10 +2,8 @@
 
 #include <iostream>
 
-void BankClient::use(BankAccount& account)
+void BankClient::use(BankAccountClientView* viewer)
 {
     using namespace std;
-    cout << "Hello Client! Your balance is: " << account.getBalance() << " gp!\n";
-    account.incrementBalance(100);
-    /* "Lol, Client has just hacked his account! */
+    cout << "Hello Client! Your balance is: " << viewer->getBalance() << " gp!\n";
 }

@@ -1,12 +1,12 @@
 #pragma once
 
-#include "BankAccount.hpp"
+#include "BalanceDecrementer.hpp"
 
 class OutgoingPayment
 {
 public:
     OutgoingPayment(unsigned int value): value(value) { }
-    void apply(BankAccount&) const;
+    void apply(BalanceDecrementer*) const;
 
 private:
     int value;

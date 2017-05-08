@@ -2,9 +2,9 @@
 
 #include <iostream>
 
-void OutgoingPayment::apply(BankAccount& account) const
+void OutgoingPayment::apply(BalanceDecrementer* decrementer) const
 {
     using namespace std;
     cout << "Apply OutgoingPayment to BankAccount with value of " << value << " gp!\n";
-    account.decrementBalance(value);
+    decrementer->decrementBalance(value);
 }

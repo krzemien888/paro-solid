@@ -1,9 +1,9 @@
 #pragma once
 
-#include "BankAccount.hpp"
+#include "BankAccountClientView.hpp"
 
 class BankClient
 {
 public:
-    void use(BankAccount&);
+    void use(BankAccountClientView*);
 };
