@@ -1,11 +1,9 @@
 #include <iostream>
-
-class Duck;
+#include "Duck.hpp"
 
 using namespace std;
 
 class RubberDuck: public Duck
 {
-	void fly(){}
 	void quack(){cout << "squeeze" << endl;}
 };

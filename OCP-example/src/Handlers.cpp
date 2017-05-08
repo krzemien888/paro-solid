@@ -19,3 +19,11 @@ CommandHandler::Result Printer::handle(const string& command, const vector<strin
     cout << parameters[0] << endl;
     return Result::Accepted;
 }
+
+CommandHandler::Result Versioner::handle(const string& command, const vector<string>& parameters) const
+{
+    if(command != "version")
+	return Result::Declined;
+    cout << "Version 0.9c" << endl;
+    return Result::Accepted;
+}

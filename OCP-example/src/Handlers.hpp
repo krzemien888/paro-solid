@@ -13,3 +13,8 @@ struct Printer : CommandHandler
 {
     Result handle(const string&, const vector<string>&) const override;
 };
+
+struct Versioner : CommandHandler
+{
+    Result handle(const string&, const vector<string>&) const override;
+};

@@ -4,15 +4,15 @@
 
 using namespace std;
 
-void Duck::quack()
+void LivingDuck::quack()
 {
 	cout << "quack" << endl;
 }
-void Duck::fly()
+void LivingDuck::fly()
 {
 	distanceFromHome += 100;
 }
-int Duck::getDistance()
+int LivingDuck::getDistance()
 {
 	return distanceFromHome;
 }
