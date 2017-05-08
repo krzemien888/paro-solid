@@ -8,7 +8,7 @@
 class Logger
 {
 public:
-    Logger(SqlAdress adress);
+    Logger(Saving saver);
     void log(std::string log);
 private:
     std::unique_ptr<Saving> dataSaver;

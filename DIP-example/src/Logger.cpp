@@ -1,8 +1,8 @@
 #include "Logger.hpp"
 
-Logger::Logger(SqlAdress adress)
+Logger::Logger(Saving saver)
 {
-    dataSaver.reset(new SqlDataSaver(adress));
+    dataSaver.reset(new Saving(saver));
 }
 
 void Logger::log(std::string log)
